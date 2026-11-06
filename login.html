@@ -1,0 +1,59 @@
+<!-- Author: VIJAYKUMAR -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - VK's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="login-page">
+    <div class="login-container">
+      <div class="login-avatar" aria-hidden="true">
+        <svg viewBox="0 0 64 64" role="img">
+          <circle cx="32" cy="23" r="11" />
+          <path d="M15 52c3-13 12-20 17-20s14 7 17 20H15z" />
+        </svg>
+      </div>
+      <h1>Customer Login</h1>
+
+      <label class="login-field" for="email">
+        <span class="field-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 6h18v12H3z" />
+            <path d="m3 7 9 7 9-7" />
+          </svg>
+        </span>
+        <input type="email" id="email" placeholder="Email ID" autocomplete="email" />
+      </label>
+
+      <label class="login-field" for="password">
+        <span class="field-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="5" y="10" width="14" height="10" rx="2" />
+            <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+            <path d="M12 14v3" />
+          </svg>
+        </span>
+        <input type="password" id="password" placeholder="Password" autocomplete="current-password" />
+      </label>
+
+      <div class="login-options">
+        <label class="remember-option">
+          <input type="checkbox" checked />
+          <span>Remember me</span>
+        </label>
+        <a href="#" aria-label="Forgot password">Forgot Password?</a>
+      </div>
+
+      <button onclick="login()">Login</button>
+
+      <p id="message"></p>
+      <p class="switch-form">New here? <a href="signup.html">Create an account</a></p>
+      <p class="switch-form"><a href="index.html">Back to store</a></p>
+
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
